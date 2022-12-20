@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Show hide button function tutorial
+
+    <p id="paragra">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+      deserunt accusantium at! Ducimus, praesentium minima expedita, corrupti,
+      libero explicabo inventore magni deserunt eius modi sit et vitae
+      distinctio earum illo aut. Amet, corrupti ipsum, commodi, voluptatibus
+      facere aliquam atque ratione modi repudiandae aperiam repellat similique
+      optio incidunt eveniet. Amet, incidunt?
+    </p>
+    <br /><button id="btn" onclick="hide()">Show/hide</button>
+
+    <script>
+      function hide() {
+        p1 = document.querySelector("#paragra");
+        if (p1.style.display == "none") {
+          p1.style.display = "block";
+        } else {
+          p1.style.display = "none";
+        }
+      }
+
+      // setInterval(hide(), 3000);
+    </script>
+  </body>
+</html>
